@@ -65,9 +65,9 @@ Para plotar o robô na posição Q faça:
  **CineD_simb**  retorna as matrizes de cinemática direta simbólicas do manipulador em função das posições das juntas q1, q2, q3, q4, q5 e q6.
 
 Parâmetros: 
-- obj -> Parâmetro do tipo KUKA_KR3_R540.
-- q1-6 -> Posição das juntas 1 a 6.
-- A1-6 -> Matrizes 4x4 contendo as equações de cinemática direta do manipulador.
+- obj: Parâmetro do tipo KUKA_KR3_R540.
+- q1-6: Posição das juntas 1 a 6.
+- A1-6: Matrizes 4x4 contendo as equações de cinemática direta do manipulador.
 
 Sintaxe:
 **[A1 A2 A3 A4 A5 A6]=CineD_simb(MeuRobo)**
@@ -90,9 +90,9 @@ T=simplify(A1*A2*A3*A4*A5*A6);
  **CineD_num** retorna a matriz resultante da cinemática direta do manipulador dado um vetor Q contendo as posições das juntas.
 
 Parâmetros: 
-- obj -> Parâmetro do tipo KUKA_KR3_R540.
-- Q -> Vetor 1x6 contendo a posição das juntas 1 a 6 em radianos.
-- M -> Matriz 4x4 que contém o resultado da cinemática direta do manipulador.
+- obj: Parâmetro do tipo KUKA_KR3_R540.
+- Q: Vetor 1x6 contendo a posição das juntas 1 a 6 em radianos.
+- M: Matriz 4x4 que contém o resultado da cinemática direta do manipulador.
 
 **M=CineD_num(obj,Q)** retorna a matriz resultante de cinemática direta do manipulador considerando um vetor Q contendo as posições das juntas.
  
@@ -107,6 +107,23 @@ M=CineD_num(MeuRobo, Q);
 
 Onde **Q** representa um vetor 1x6 contendo as posições das 6 juntas do manipulador.
 
+### CineI(M) - Cinemática inversa do manipulador
+CineI retorna o vetor Q contendo as posições das juntas dada a matriz resultante do manipulador
+
+Parâmetros: 
+- obj: Parâmetro do tipo KUKA_KR3_R540.
+- Q: Vetor 1x6 contendo a posição das juntas 1 a 6 em radianos.
+- M: Matriz 4x4 que contém o resultado da cinemática direta do manipulador.   
+
+ Utilização:
+ 
+ Para encontrar os valores das posições das juntas **Q** do manipulador faça:
+ 
+  ``` matlab
+Q = [pi/4 pi/18 pi/8 pi/2 pi pi/3] %Vetor Q 1x6 qualquer
+M=CineD_num(MeuRobo, Q);
+Qi=CineI(M)
+```
 
 # Requisitos
 - Software MATLAB 

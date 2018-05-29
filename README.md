@@ -20,7 +20,7 @@ Elo | q_i  | d_i [mm] | a_i [mm] | alpha_i |
 
 ## Métodos
 
-O arquivo *main.m* contém exemplos de utilização dos métodos implementados  na classe **KUKA_KR3_R540**
+Foram implementados métodos que realizam a representação gráfica do manipulador, bem como as cinemáticas direta (simbólica e numérica) e inversa do manipulador. O arquivo *main.m* contém exemplos de utilização dos métodos implementados  na classe **KUKA_KR3_R540**
 
 # Requisitos
 - Software MATLAB 

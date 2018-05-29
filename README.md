@@ -68,8 +68,17 @@ Parâmetros:
 - A1-6 -> Matrizes 4x4 contendo as equações de cinemática direta do manipulador.
 
 Utilização:
+
+Para encontrar as matrizes transição de estados que descrevem cada uma das juntas do manipulador faça:
+
 ``` matlab
 [A1 A2 A3 A4 A5 A6]=CineD_simb(MeuRobo);
+```
+
+Se, por exemplo, desejar encontrar a matriz transição de estados **T** que descreve as equações do sistema de referência da base ao efetuador, faça:
+
+``` matlab
+T=simplify(A1*A2*A3*A4*A5*A6);
 ```
 
 # Requisitos

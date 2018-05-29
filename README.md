@@ -8,7 +8,7 @@ O modelo foi desenvolvido com auxílio da **toolbox de Robótica para  MATLAB** 
 # Modelo
 O modelo do manipulador é descrito pelos parâmetros de Denavit-Hartenberg dados  por
 
-Elo | q_i  | $\mathbf{d_i}$ [mm] | $\mathbf{a_i}$ [mm] | $\mathbf{\alpha_i}$ |
+Elo | q_i  | d_i [mm] | a_i [mm] | alpha_i |
 :---------: | :---------:  | :------: | :------: | :------: 
 1 | q_1 | -345   |   20   |  pi/2  |
 2 | q_2 |   0     |  260   |    0   |

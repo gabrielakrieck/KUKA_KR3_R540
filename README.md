@@ -58,7 +58,7 @@ Para plotar o robô na posição Q faça:
  %Plota Robô na posição Q:
  plotar(MeuRobo, Q)
 ```
-### CineD_simb(obj) - Equações de cinemática direta do manipulador
+### CineD_simb(obj) - Equações de cinemática direta simbólicas do manipulador
  
  **CineD_simb**  retorna as matrizes de cinemática direta simbólicas do manipulador   
 
@@ -80,6 +80,28 @@ Se, por exemplo, desejar encontrar a matriz transição de estados **T** que des
 ``` matlab
 T=simplify(A1*A2*A3*A4*A5*A6);
 ```
+
+### CineD_simb(obj) - Equações de cinemática direta numéricas do manipulador
+ **CineD_num** retorna a matriz resultante da cinemática direta do manipulador dado um vetor Q contendo as posições das juntas.
+
+Parâmetros: 
+- obj -> Parâmetro do tipo KUKA_KR3_R540.
+- Q -> Vetor 1x6 contendo a posição das juntas 1 a 6 em radianos.
+- M -> Matriz 4x4 que contém o resultado da cinemática direta do manipulador.
+
+**M=CineD_num(obj,Q)** retorna a matriz resultante de cinemática direta do manipulador considerando um vetor Q contendo as posições das juntas.
+ 
+ Utilização:
+ 
+ Para encontrar a matriz resultante da cinemática direta do manipulador faça:
+ 
+ ``` matlab
+Q = [0 -pi/2 pi/2 80*pi/180 0 0] %Vetor Q 1x6 qualquer
+M=CineD_num(MeuRobo, Q);
+```
+
+Onde **Q** representa um vetor 1x6 contendo as posições das 6 juntas do manipulador.
+
 
 # Requisitos
 - Software MATLAB 

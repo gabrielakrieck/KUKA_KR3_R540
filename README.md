@@ -32,9 +32,9 @@ MeuRobo=KUKA_KR3_R540
 
 o construtor incializa uma variável *Qm* contendo as posições das juntas do manipulador quando o mesmo está na *configuração master*, definida pelo fabricante e também a variável *KR3_R540* do tipo *SerialLink* que contém o modelo do robô.
 
-### plotar(obj, Q) 
+### plotar(obj, Q) - Representação gráfica do manipulador
 
-**PLOTAR** apresenta uma representação gráfica do manipulador 
+**PLOTAR** apresenta uma representação gráfica do manipulador, realizando a configuração do ambiente de simulação.
 
 
  Parâmetros: 
@@ -58,7 +58,19 @@ Para plotar o robô na posição Q faça:
  %Plota Robô na posição Q:
  plotar(MeuRobo, Q)
 ```
+### CineD_simb(obj) - Equações de cinemática direta do manipulador
+ 
+ **CineD_simb**  retorna as matrizes de cinemática direta simbólicas do manipulador   
 
+Parâmetros: 
+- obj -> Parâmetro do tipo KUKA_KR3_R540.
+- q1-6 -> Posição das juntas 1 a 6.
+- A1-6 -> Matrizes 4x4 contendo as equações de cinemática direta do manipulador.
+
+Utilização:
+``` matlab
+[A1 A2 A3 A4 A5 A6]=CineD_simb(MeuRobo);
+```
 
 # Requisitos
 - Software MATLAB 

@@ -26,6 +26,7 @@ Foram implementados métodos que realizam a representação gráfica do manipula
 
 O construtor cria um novo objeto do tipo *KUKA_KR3_R540* de acordo com os parâmetros de Denavit-Hartenberg já definidos. Para criar um novo objeto do tipo *KUKA_KR3_R540* faça:
 
+Utilização:
 ``` matlab
 MeuRobo=KUKA_KR3_R540
 ```
@@ -47,6 +48,7 @@ o construtor incializa uma variável *Qm* contendo as posições das juntas do m
 
 **PLOTAR(obj, Q)** plota o robô na posição Q, em radianos, definida pelo usuário.
 
+Utilização:
 Para plotar o robô na posição master faça:
 ``` matlab
 %Plota Robô na posição master:
@@ -60,12 +62,15 @@ Para plotar o robô na posição Q faça:
 ```
 ### CineD_simb(obj) - Equações de cinemática direta simbólicas do manipulador
  
- **CineD_simb**  retorna as matrizes de cinemática direta simbólicas do manipulador   
+ **CineD_simb**  retorna as matrizes de cinemática direta simbólicas do manipulador em função das posições das juntas q1, q2, q3, q4, q5 e q6.
 
 Parâmetros: 
 - obj -> Parâmetro do tipo KUKA_KR3_R540.
 - q1-6 -> Posição das juntas 1 a 6.
 - A1-6 -> Matrizes 4x4 contendo as equações de cinemática direta do manipulador.
+
+Sintaxe:
+**[A1 A2 A3 A4 A5 A6]=CineD_simb(MeuRobo)**
 
 Utilização:
 

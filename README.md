@@ -18,7 +18,7 @@ Elo | q_i  | d_i [mm] | a_i [mm] | alpha_i |
 6 | q_6+pi |  -195   |    0   |   pi  |
 
 
-## Métodos
+## Modo de usar
 
 Foram implementados métodos que realizam a representação gráfica do manipulador, bem como as cinemáticas direta (simbólica e numérica) e inversa do manipulador. O arquivo *main.m* contém exemplos de utilização dos métodos implementados  na classe **KUKA_KR3_R540**
 

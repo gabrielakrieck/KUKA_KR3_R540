@@ -5,7 +5,7 @@
 O modelo foi desenvolvido com auxílio da **toolbox de Robótica para  MATLAB** (RVC toolbox) e conta com a implementação das cinemáticas direta e inversa do manipulador bem como com um protótipo do modelo.
 
 
-# Modelo
+## Modelo
 O modelo do manipulador é descrito pelos parâmetros de Denavit-Hartenberg dados  por
 
 Elo | q_i  | d_i [mm] | a_i [mm] | alpha_i |
@@ -18,9 +18,9 @@ Elo | q_i  | d_i [mm] | a_i [mm] | alpha_i |
 6 | q_6+pi |  -195   |    0   |   pi  |
 
 
-# Métodos
+## Métodos
 
-O arquivo main.m 
+O arquivo *main.m* contém exemplos de utilização dos métodos implementados  na classe **KUKA_KR3_R540**
 
 # Requisitos
 - Software MATLAB 

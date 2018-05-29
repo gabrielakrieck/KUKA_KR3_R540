@@ -22,6 +22,16 @@ Elo | q_i  | d_i [mm] | a_i [mm] | alpha_i |
 
 Foram implementados métodos que realizam a representação gráfica do manipulador, bem como as cinemáticas direta (simbólica e numérica) e inversa do manipulador. O arquivo *main.m* contém exemplos de utilização dos métodos implementados  na classe **KUKA_KR3_R540**
 
+### KUKA_KR3_R540 - Construtor do modelo
+
+O construtor cria um novo objeto do tipo *KUKA_KR3_R540* de acordo com os parâmetros de Denavit-Hartenberg. 
+
+Para criar um novo objeto do tipo *KUKA_KR3_R540* faça
+
+``` matlab
+MeuRobo=KUKA_KR3_R540
+```
+
 # Requisitos
 - Software MATLAB 
 - Toolbox de robótica para Matlab 10.2.1 (RVC toolbox) 

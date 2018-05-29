@@ -31,5 +31,5 @@ O arquivo main.m
  - RVC Toolbox: http://www.petercorke.com
 
 # Autores 
-Artur H. Lauth
-Gabriela A. Krieck
+- Artur H. Lauth
+- Gabriela A. Krieck

@@ -6,16 +6,16 @@ O modelo foi desenvolvido com auxílio da **toolbox de Robótica para  MATLAB** 
 
 
 # Modelo
-O modelo do manipulador é descrito pelos parâmetros de Denavit-Hartenberg dados  por:
+O modelo do manipulador é descrito pelos parâmetros de Denavit-Hartenberg dados  por
 
-Elo | $\mathbf{q_i}$  | $\mathbf{d_i}$ [mm] | $\mathbf{a_i}$ [mm] | $\mathbf{\alpha_i}$ |
+Elo | q_i  | $\mathbf{d_i}$ [mm] | $\mathbf{a_i}$ [mm] | $\mathbf{\alpha_i}$ |
 :---------: | :---------:  | :------: | :------: | :------: 
-1 | $q_1$ | -345   |   20   |  $\frac{\pi}{2}$  |
-2 | $q_2$ |   0     |  260   |    0   |
-3 | $q_3-\frac{\pi}{2}$  |   0     |   20   |  $\frac{\pi}{2}$   |
-4 | $q_4-\frac{4 \pi}{9}$|  -260   |    0   | -$\frac{\pi}{2}$   |
-5 | $q_5$ |   0     |    0   |  $\frac{\pi}{2}$   |
-6 | $q_6+\pi$ |  -195   |    0   |   $\pi$   |
+1 | q_1 | -345   |   20   |  pi/2  |
+2 | q_2 |   0     |  260   |    0   |
+3 | q_3-pi/2  |   0     |   20   |  pi/2  |
+4 | q_4-4pi/9|  -260   |    0   | -pi/2   |
+5 | q_5 |   0     |    0   |  pi/2  |
+6 | q_6+pi |  -195   |    0   |   pi  |
 
 
 # Métodos

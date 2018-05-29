@@ -33,12 +33,18 @@ MeuRobo=KUKA_KR3_R540
 o construtor incializa uma variável *Qm* contendo as posições das juntas do manipulador quando o mesmo está na *configuração master*, definida pelo fabricante e também a variável *KR3_R540* do tipo *SerialLink* que contém o modelo do robô.
 
 ### plotar(obj, Q) 
-**PLOTAR** apresenta uma representação gráfica do manipulador   
-     - Parâmetros: 
-          - obj -> Parâmetro do tipo KUKA_KR3_R540.
-          - Q -> Vetor 1x6 contendo as posições desejadas para as 6 juntas do manipulador em radianos.
+
+**PLOTAR** apresenta uma representação gráfica do manipulador 
+
+
+ Parâmetros: 
+ - **obj**: Parâmetro do tipo KUKA_KR3_R540.
+ - **Q**: Vetor 1x6 contendo as posições desejadas para as 6 juntas do manipulador em radianos.
+
+
 
 **PLOTAR(obj)** plota o robô na posição 'master' definida pelo manual do manipulador. 
+
 **PLOTAR(obj, Q)** plota o robô na posição Q, em radianos, definida pelo usuário.
 
 Para plotar o robô na posição master faça:

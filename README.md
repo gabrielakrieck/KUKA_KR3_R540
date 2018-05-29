@@ -22,15 +22,37 @@ Elo | q_i  | d_i [mm] | a_i [mm] | alpha_i |
 
 Foram implementados métodos que realizam a representação gráfica do manipulador, bem como as cinemáticas direta (simbólica e numérica) e inversa do manipulador. O arquivo *main.m* contém exemplos de utilização dos métodos implementados  na classe **KUKA_KR3_R540**
 
-### KUKA_KR3_R540 - Construtor do modelo
+### KUKA_KR3_R540 - Construtor do modelo do manipulador
 
-O construtor cria um novo objeto do tipo *KUKA_KR3_R540* de acordo com os parâmetros de Denavit-Hartenberg. 
-
-Para criar um novo objeto do tipo *KUKA_KR3_R540* faça
+O construtor cria um novo objeto do tipo *KUKA_KR3_R540* de acordo com os parâmetros de Denavit-Hartenberg já definidos. Para criar um novo objeto do tipo *KUKA_KR3_R540* faça:
 
 ``` matlab
 MeuRobo=KUKA_KR3_R540
 ```
+
+o construtor incializa uma variável *Qm* contendo as posições das juntas do manipulador quando o mesmo está na *configuração master*, definida pelo fabricante e também a variável *KR3_R540* do tipo *SerialLink* que contém o modelo do robô.
+
+### plotar(obj, Q) 
+**PLOTAR** apresenta uma representação gráfica do manipulador   
+     - Parâmetros: 
+          - obj -> Parâmetro do tipo KUKA_KR3_R540.
+          - Q -> Vetor 1x6 contendo as posições desejadas para as 6 juntas do manipulador em radianos.
+
+**PLOTAR(obj)** plota o robô na posição 'master' definida pelo manual do manipulador. 
+**PLOTAR(obj, Q)** plota o robô na posição Q, em radianos, definida pelo usuário.
+
+Para plotar o robô na posição master faça:
+``` matlab
+%Plota Robô na posição master:
+plotar(MeuRobo)
+```
+
+Para plotar o robô na posição Q faça:
+``` matlab
+ %Plota Robô na posição Q:
+ plotar(MeuRobo, Q)
+```
+
 
 # Requisitos
 - Software MATLAB 
